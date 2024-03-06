@@ -2,7 +2,19 @@ import mongoose from 'mongoose'; // Erase if already required
 
 // Declare the Schema of the Mongo model
 var userSchema = new mongoose.Schema({
-    name:{
+    username:{
+        type:String,
+        required:true,
+    },
+    country:{
+        type:String,
+        required:true,
+    },
+    state:{
+        type:String,
+        required:true,
+    },
+    fullAddress:{
         type:String,
         required:true,
     },

@@ -2,6 +2,8 @@ import express from "express";
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 
+import userAuthentication from './routes/user.routes.js';
+
 dotenv.config();
 
 const app = express();
@@ -15,4 +17,16 @@ mongoose.connect(process.env.db).then(() => {
     });
 }).catch((error)=> {
     console.log(error,'Error while connecting to database!');
+});
+
+app.use('/api/auth', userAuthentication);
+
+app.use((err, req, res, next) => {
+    const stsatusCode = err.stsatusCode || 500;
+    const message = err.message || 'Internal Server Error!';
+    return res.status(stsatusCode).json({
+        success: false,
+        stsatusCode,
+        message,
+    });
 });
