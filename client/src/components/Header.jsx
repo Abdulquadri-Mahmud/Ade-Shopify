@@ -32,9 +32,9 @@ export default function Header() {
                             <div className="relative dropDownCont">
                                 <p>Setting</p>
                                 <div className="dropDownList flex flex-col items-center justify-center gap-3 absolute md:-left-10 -left-10 mt-2 h-[0px] overflow-hidden duration-200 w-[160px] bg-slate-100 z-10">
-                                    <Link to='/' className="p-2 bg-slate-600 hover:bg-slate-800 duration-200 text-white w-full rounded">My Account</Link>
-                                    <Link to='/' className="p-2 bg-slate-600 hover:bg-slate-800 duration-200 text-white w-full rounded">Checkout</Link>
-                                    <Link to='/signin' className='p-2 bg-slate-600 hover:bg-slate-800 duration-200 text-white w-full rounded'>Sign In</Link>
+                                    <Link to='/' className="p-2 bg-slate-700 hover:bg-slate-800 duration-200 text-white w-full rounded">My Account</Link>
+                                    <Link to='/' className="p-2 bg-slate-700 hover:bg-slate-800 duration-200 text-white w-full rounded">Checkout</Link>
+                                    <Link to='/signin' className='p-2 bg-slate-700 hover:bg-slate-800 duration-200 text-white w-full rounded'>Sign In</Link>
                                 </div>
                             </div>
                         </div>
@@ -71,14 +71,14 @@ export default function Header() {
                     <form className='w-[100%] relative'>
                         <div className="">
                             <input type="text" placeholder='Search For Products' className='bg-slate-200 text-black font-semibold rounded outline-none p-2 w-[100%]'/>
-                            <div className="bg-slate-600 absolute top-0 right-0 flex justify-center items-center w-[45px] h-full rounded-r-md cursor-pointer ">
+                            <div className="bg-slate-700 absolute top-0 right-0 flex justify-center items-center w-[45px] h-full rounded-r-md cursor-pointer ">
                                 <MdSearch className="text-2xl font-bold text-slate-50 text-center"/>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div  className="relative p-2 w-[130px] rounded font-semibold text-slate-50 bg-slate-600">
-                    <div  className="absolute -top-2 -left-2 w-[25px] h-[25px] bg-slate-600 rounded-full flex justify-center font-semibold">
+                <div  className="relative p-2 w-[130px] rounded font-semibold text-slate-50 bg-slate-700">
+                    <div  className="absolute -top-2 -left-2 w-[25px] h-[25px] bg-slate-700 rounded-full flex justify-center font-semibold">
                         <p className=''>5</p>
                     </div>
                     <div className="dropDownCont">
@@ -94,10 +94,10 @@ export default function Header() {
                 </div>
             </div>
             <div className="hidden md:block">
-                <div className="bg-slate-600 text-slate-50 flex justify-start gap-3 font-semibold text-1x p-3">
+                <div className="bg-slate-700 border-b-2 border-white text-slate-50 flex justify-start gap-3 font-semibold text-1x p-3">
                     <div className="flex gap-3">
-                        <Link>Home</Link>
-                        <Link>About Us</Link>
+                        <Link to='/'>Home</Link>
+                        <Link to='/about'>About Us</Link>
                     </div>
                     <div className="flex justify-center gap-4">
                         <div className="dropDownCont2">
@@ -211,7 +211,7 @@ export default function Header() {
                 </div>
             </div>
             <div className=" block md:hidden ">
-                <div className="bg-slate-600 border-b-2 border-white p-2 flex justify-between">
+                <div className="bg-slate-700 border-b-2 border-white p-2 flex justify-between">
                     <div className="w-[90%] rounded">
                         <form className='w-[100%] relative'>
                             <div className="">
@@ -230,8 +230,8 @@ export default function Header() {
                         </div>
                         <div className="sidemenu w-0 z-10 fixed top-0 right-0 overflow-hidden duration-300 h-full bg-gray-100">
                             <div className="flex gap-3 flex-col p-3 font-semibold">
-                                <Link>Home</Link>
-                                <Link>About Us</Link>
+                                <Link to='/'>Home</Link>
+                                <Link to='/about'>About Us</Link>
                             </div>
                             <div className=" text-black flex justify-start flex-col gap-3 font-semibold text-1x p-3">
                                 <div className="flex flex-col gap-4">

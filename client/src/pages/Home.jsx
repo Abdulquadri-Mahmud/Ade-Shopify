@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
       <section className="w-full flex justify-between">
         <Slider {...settings} className="md:h-[80vh] h-[100%] w-full">
           <div className=" w-full h-full p-10 text-slate-800">
