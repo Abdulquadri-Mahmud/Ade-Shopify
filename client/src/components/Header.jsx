@@ -102,7 +102,7 @@ export default function Header() {
                     <div className="flex justify-center gap-4">
                         <div className="dropDownCont2">
                             <div className="flex items-center justify-center gap-2">
-                                <h3>Womens Wear</h3>
+                                <h3>Women's Wear</h3>
                             </div>
                             <div className="dropDownList z-10 text-black flex flex-col gap-3 absolute mt-3 h-[0px] w-[50%] shadow-md overflow-hidden duration-200 bg-slate-200">
                                 <Link className="py-2 text-slate-50 bg-slate-600 px-4 hover:bg-slate-600 hover:text-slate-50 hover:px-4 hover:py-2 duration-200 rounded">Shirt</Link>
@@ -123,7 +123,7 @@ export default function Header() {
                         </div>
                         <div className="dropDownCont2">
                             <div className="flex items-center justify-center gap-2">
-                                <h3>Mens Wear</h3>
+                                <h3>Men's Wear</h3>
                             </div>
                             <div className="dropDownList z-10 text-black flex flex-col gap-3 absolute mt-3 h-[0px] w-[50%] shadow-md overflow-hidden duration-200 bg-slate-200">
                                 <Link className="py-2 text-slate-50 bg-slate-600 px-4 hover:bg-slate-600 hover:text-slate-50 hover:px-4 hover:py-2 duration-200 rounded">Shirt</Link>
