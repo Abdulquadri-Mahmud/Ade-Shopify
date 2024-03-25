@@ -4,6 +4,7 @@ import Home from '../pages/Home';
 import Signup from '../pages/Signup';
 import Signin from '../pages/Signin';
 import Header from '../components/Header';
+import Profile from '../pages/Profile';
 
 export default function PagesRoutes() {
   return (
@@ -13,6 +14,7 @@ export default function PagesRoutes() {
         <Route path='/' element={<Home/>}/>
         <Route path='/signin' element={<Signin/>}/>
         <Route path='/signup' element={<Signup/>}/>
+        <Route path='/profile' element={<Profile/>}/>
       </Routes>
     </Router>
   )

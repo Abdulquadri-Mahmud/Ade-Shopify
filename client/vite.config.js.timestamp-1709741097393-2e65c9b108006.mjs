@@ -5,7 +5,7 @@ var vite_config_default = defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http:"
+        target: "http://localhost:3001"
       }
     }
   },
